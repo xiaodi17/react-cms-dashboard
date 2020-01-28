@@ -442,6 +442,7 @@ module.exports = function(webpackEnv) {
               // See https://github.com/webpack/webpack/issues/6571
               sideEffects: true
             },
+            //less file
             {
               test: lessRegex,
               use: [
