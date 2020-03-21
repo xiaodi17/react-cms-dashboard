@@ -11,9 +11,7 @@ export default {
       ' ' +
       date.getHours() +
       ':' +
-      date.getMinutes() +
-      ':' +
-      date.getSeconds()
+      date.getMinutes()
     )
   }
 }

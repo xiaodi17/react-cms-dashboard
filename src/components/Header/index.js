@@ -29,7 +29,7 @@ export default class Header extends React.Component {
           </Col>
           <Col className="weather" span="20">
             <span className="date">{this.state.sysTime}</span>
-            <span className="weather-detail">Storm</span>
+            {/* <span className="weather-detail">Storm</span> */}
           </Col>
         </Row>
       </div>
