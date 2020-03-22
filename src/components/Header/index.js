@@ -30,9 +30,10 @@ export default class Header extends React.Component {
           let data = res.weather[0]
           console.log(data)
           this.setState({
-            // dayPictureUrl: data.dayPictureUrl,
-            weather: data.main
+            dayPictureUrl: `http://openweathermap.org/img/wn/${data.icon}@2x.png`,
+            weather: data.description
           })
+          console.log(this.state.dayPictureUrl)
         }
       })
   }
@@ -51,6 +52,9 @@ export default class Header extends React.Component {
           </Col>
           <Col className="weather" span="20">
             <span className="date">{this.state.sysTime}</span>
+            <span className="weather-img">
+              <img src={this.state.dayPictureUrl} alt="" />
+            </span>
             <span className="weather-detail">{this.state.weather}</span>
           </Col>
         </Row>
