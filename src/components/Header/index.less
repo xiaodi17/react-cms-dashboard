@@ -8,14 +8,9 @@
     text-align: right;
     .logo {
       line-height: 60px;
-      text-align: left;
-      font-size: 18px;
       img {
         height: 40px;
         vertical-align: middle;
-      }
-      span {
-        margin-left: 5px;
       }
     }
     a {
@@ -29,12 +24,13 @@
     border-top: 1px solid #f9c700;
     .breadcrumb-title {
       text-align: center;
+      font-size: @fontC;
       &:after {
         position: absolute;
         content: '';
         left: 73px;
         top: 39px;
-        border-top: 9px solid;
+        border-top: 9px solid @colorM;
         border-left: 12px solid transparent;
         border-right: 12px solid transparent;
       }
@@ -48,7 +44,7 @@
       }
       .weather-img {
         img {
-          height: 30px;
+          height: 15px;
         }
       }
       .weather-detail {
