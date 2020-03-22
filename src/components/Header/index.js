@@ -2,6 +2,7 @@ import React from 'react'
 import { Row, Col } from 'antd'
 import './index.less'
 import Util from '../../utils/utils'
+import axios from '../../axios'
 export default class Header extends React.Component {
   componentWillMount() {
     this.setState({
@@ -13,6 +14,27 @@ export default class Header extends React.Component {
         sysTime
       })
     }, 1000)
+    this.getWeatherAPIData()
+  }
+
+  getWeatherAPIData() {
+    let city = 'Brisbane'
+    let APIKEY = process.env.REACT_APP_WEATHER_API
+    console.log(APIKEY)
+    axios
+      .jsonp({
+        url: `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${APIKEY}`
+      })
+      .then(res => {
+        if (res.cod === 200) {
+          let data = res.weather[0]
+          console.log(data)
+          this.setState({
+            // dayPictureUrl: data.dayPictureUrl,
+            weather: data.main
+          })
+        }
+      })
   }
   render() {
     return (
@@ -29,7 +51,7 @@ export default class Header extends React.Component {
           </Col>
           <Col className="weather" span="20">
             <span className="date">{this.state.sysTime}</span>
-            {/* <span className="weather-detail">Storm</span> */}
+            <span className="weather-detail">{this.state.weather}</span>
           </Col>
         </Row>
       </div>
