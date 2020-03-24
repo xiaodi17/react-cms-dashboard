@@ -17,7 +17,7 @@ export default class Buttons extends React.Component {
   }
 
   handleConfirm = type => {
-    //Model.type() === Modal[type]
+    //Model.type() === Modal['type']
     Modal[type]({
       title: 'AntD',
       content: 'Do you want to close this modal?',
