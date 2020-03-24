@@ -9,9 +9,10 @@ export default class Buttons extends React.Component {
     showModal4: false
   }
 
+  //dont write if else statement here
   handleOpen = type => {
     this.setState({
-      [type]: true
+      [type]: true //pass param dynamically
     })
   }
 
