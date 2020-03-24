@@ -21,7 +21,7 @@ const menuList = [
       },
       {
         title: 'Notification',
-        key: '/ui/notification'
+        key: '/ui/notifications'
       },
       {
         title: 'Messages',
