@@ -9,7 +9,7 @@ export default class Messages extends React.Component {
   render() {
     return (
       <div>
-        <Card title="Normal prompt" className="card-wrap">
+        <Card title="Message prompt" className="card-wrap">
           <Button type="primary" onClick={() => this.showMessage('success')}>
             Success
           </Button>
