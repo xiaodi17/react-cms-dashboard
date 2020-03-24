@@ -24,7 +24,7 @@ export default class Loadings extends React.Component {
             <Alert
               message="React"
               description="Welcome to AntD CMS"
-              type="warning"
+              type="info"
               style={{ marginBottom: 10 }}
             />
           </Spin>
@@ -32,7 +32,7 @@ export default class Loadings extends React.Component {
             <Alert
               message="React"
               description="Welcome to AntD CMS"
-              type="warning"
+              type="info"
               style={{ marginBottom: 10 }}
             />
           </Spin>
@@ -40,7 +40,7 @@ export default class Loadings extends React.Component {
             <Alert
               message="React"
               description="Welcome to AntD CMS"
-              type="warning"
+              type="info"
             />
           </Spin>
         </Card>
