@@ -37,10 +37,10 @@ export default class Notifications extends React.Component {
             Error
           </Button>
         </Card>
-        <Card title="Notification" className="card-wrap">
+        <Card title="Notification (Direction)" className="card-wrap">
           <Button
             type="primary"
-            onClick={() => this.openNotification('success', 'topRight')}
+            onClick={() => this.openNotification('success', 'topLeft')}
           >
             Success
           </Button>
@@ -52,13 +52,13 @@ export default class Notifications extends React.Component {
           </Button>
           <Button
             type="primary"
-            onClick={() => this.openNotification('warning', 'topRight')}
+            onClick={() => this.openNotification('warning', 'bottomLeft')}
           >
             Warning
           </Button>
           <Button
             type="primary"
-            onClick={() => this.openNotification('error', 'topRight')}
+            onClick={() => this.openNotification('error', 'bottomRight')}
           >
             Error
           </Button>
