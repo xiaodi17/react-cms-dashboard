@@ -5,7 +5,7 @@ const TabPane = Tabs.TabPane
 
 export default class Tab extends React.Component {
   handleCallback = key => {
-    message.info('Hi,您选择了页签：' + key)
+    message.info('Hi, this is tab：' + key)
   }
   render() {
     return (
